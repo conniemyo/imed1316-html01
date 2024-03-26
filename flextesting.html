@@ -16,6 +16,11 @@
 <script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
 <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
 <script>
+
+  $( function() {
+    $( "input" ).checkboxradio();
+    $( "fieldset" ).controlgroup();
+  } );
 	
   $( function() {
     $( "#menu" ).menu({
@@ -66,15 +71,29 @@
 	
 <ul id="menu">
   <li class="ui-widget-header"><div>TRAVEL TIPS</div></li>
-  <li><div>Planning</div></li>
-  <li><div>Budgeting</div></li>
-  <li><div>Safety</div></li>
+  	<li><div>Planning</div></li>
+  	<li><div>Budgeting</div></li>
+  	<li><div>Safety</div></li>
   <li class="ui-widget-header"><div>TRAVEL SPOTS</div></li>
-  <li><div>North America</div></li>
-  <li><div>South America</div></li>
-  <li><div>Europe</div></li>
+  	<li><div>North America</div></li>
+  	<li><div>South America</div></li>
+  	<li><div>Europe</div></li>
 </ul>
 	
-    </div>
+	<div class="widget">
+  		<div id="college">
+  			<h2>Select Your College</h2>
+  			<fieldset>
+    			<legend>College Type:</legend>
+    			<label for="radio-1">Community College</label>
+    			<input type="radio" name="radio-1" id="radio-1">
+    			<label for="radio-2">Public University</label>
+    			<input type="radio" name="radio-1" id="radio-2">
+    			<label for="radio-3">Private Institution</label>
+    			<input type="radio" name="radio-1" id="radio-3">
+  			</fieldset>
+		</div>
+	</div>
+</div>
 </body>
 </html>
