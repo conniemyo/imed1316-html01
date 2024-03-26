@@ -1313,3 +1313,45 @@ a.ui-button:active,
 	-webkit-box-shadow: -4px -4px 4px #aaaaaa;
 	box-shadow: -4px -4px 4px #aaaaaa;
 }
+
+	
+* {
+    box-sizing: border-box;}
+
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #c7e5f6;
+}
+
+.flex-container>div {
+  background-color: #7bcbf2;
+  color: white;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+	
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.listed {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.blocks {
+  background-color: #7bcbf2;
+  color: white;
+  width: 90%;
+  padding: 20px;
+}
+	
+ .ui-menu { width: 200px; }
+  .ui-widget-header { padding: 0.2em; }
+	
