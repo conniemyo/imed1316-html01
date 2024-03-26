@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #c7e5f6;
+}
+
+.flex-container>div {
+  background-color: #7bcbf2;
+  color: white;
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+	
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.listed {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.blocks {
+  background-color: #7bcbf2;
+  color: white;
+  width: 90%;
+  padding: 20px;
+}
+	
+ .ui-menu { width: 200px; }
+  .ui-widget-header { padding: 0.2em; }
+	
+</style>
+<link href="jquery-ui.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui.structure.css" rel="stylesheet" type="text/css">
+<link href="jquery-ui.theme.css" rel="stylesheet" type="text/css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+<script>
+	
+  $( function() {
+    $( "#sitedetails" ).accordion();
+  } );
+
+  $( function() {
+    $( "#menu" ).menu({
+      items: "> :not(.ui-widget-header)"
+    });
+	  
+</script>
+</head>
+<body>
+<div id="container">
+<h1>Travel Menu</h1>
+
+	<div class="flex-container">
+    	<div class="flex-responsive">BLOG</div>
+    	<div class="flex-responsive">RESOURCES</div>
+    	<div class="flex-responsive">OTHER</div>
+	</div>
+	
+  	<div class="listed">
+    	<h2>Helpful Travel Info</h2>
+    	<div class="blocks" style="height:30px;">- PLACEHOLDER TEXT -</div><br>
+    	<div class="blocks" style="height:30px;">- PLACEHOLDER TEXT -</div><br>
+    	<div class="blocks" style="height:30px;">- PLACEHOLDER TEXT -</div>
+  	</div>
+	<div class="listed">
+      <div id="sitedetails">
+        <h3>My Bio</h3>
+        <div>
+          <p>- PLACEHOLDER TEXT -</p>
+        </div>
+        <h3>My Purpose</h3>
+        <div>
+          <p>- PLACEHOLDER TEXT -</p>
+        </div>
+        <h3>Contact Info</h3>
+        <div>
+          <p>- PLACEHOLDER TEXT - </p>
+        </div>
+      </div>
+    </div>
+	
+<br>
+	
+<ul id="menu">
+  <li class="ui-widget-header"><div>TRAVEL TIPS</div></li>
+  <li><div>Planning</div></li>
+  <li><div>Budgeting</div></li>
+  <li><div>Safety</div></li>
+  <li class="ui-widget-header"><div>TRAVEL SPOTS</div></li>
+  <li><div>North America</div></li>
+  <li><div>South America</div></li>
+  <li><div>Europe</div></li>
+</ul>
+	
+    </div>
+</body>
+</html>
